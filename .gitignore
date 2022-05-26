@@ -2,14 +2,6 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/docs/.vuepress/dist
 
 # misc
 .DS_Store
