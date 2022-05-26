@@ -1,13 +1,16 @@
 module.exports = {
   title: 'Little Oat',
-  description: 'Vue Press Page',
+  description: 'LitteOat\'s Notes',
   base: '/vuepress/',   // 部署时 网址域名后紧接着的
   markdown: {           // markdown 设置
     lineNumbers: true     // 代码块是否显示序号
   },
   themeConfig: {
-    locales: {  // 使用locales可以实现语言国际化
-      '/': {
+    logo: '/assets/img/logo.jpg',    // 导航栏Logo
+    // lastUpdated: '最后更新于',        // 最后更新时间（string | boolean）string是自定义前缀，使用的是git commit的时间戳，所以时间不合适
+
+    locales: {                       // 使用locales可以实现语言国际化
+      '/': {  // 此处默认 / 是中文
         nav: [
           { text: 'Github', link: 'https://github.com/MichaelGmx' },
           { text: 'vuepress官网', link: 'https://vuepress.vuejs.org/zh/' },
@@ -30,8 +33,33 @@ module.exports = {
               ]
             },
             {
+              title: 'Angular',
+              collapsable: true,
+              sidebarDepth: 0,
+              children: [
+                {
+                  title: 'angularJs',
+                  collapsable: false,
+                  sidebarDepth: 0,
+                  children: [
+                    {
+                      collapsable: false,
+                      sidebarDepth: 0,
+                      children: [
+                        ['angular/angular-js/angularjs-directive-scope', 'angularjs Directive中的scope设置'],
+                      ]
+                    }
+                  ]
+                },
+                {
+                  title: 'Angular2x',
+                  collapsable: false,
+                },
+              ]
+            },
+            {
               title: 'Android',
-              collapsable: false,
+              collapsable: true,
               sidebarDepth: 0,
               children: [
                 {
@@ -43,39 +71,8 @@ module.exports = {
                 }
               ]
             },
-            {
-              title: 'Angular',
-              collapsable: false,
-              sidebarDepth: 0,
-              children: [
-                {
-                  collapsable: false,
-                  sidebarDepth: 0,
-                  children: [
-                    {
-                      title: 'angularJs',
-                      collapsable: false,
-                      sidebarDepth: 0,
-                      children: [
-                        {
-                          collapsable: false,
-                          sidebarDepth: 0,
-                          children: [
-                            ['angular/angular-js/angularjs-directive-scope', 'angularjs Directive中的scope设置'],
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      title: 'Angular2x',
-                      collapsable: false,
-                    }
-                  ]
-                }
-              ]
-            }
           ]
-        }
+        },
       }
     }
   }
