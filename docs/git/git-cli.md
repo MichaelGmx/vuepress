@@ -1,4 +1,10 @@
-# git常用cli
+---
+title: git常用cli
+# author: MichaelOat
+date: '2022-05-26'
+---
+
+<!-- # git常用cli -->
 
 [我的 git语雀笔记](https://www.yuque.com/xiaomaipian/ih98mh/mdarb4)
 

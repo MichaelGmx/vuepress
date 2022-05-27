@@ -1,4 +1,9 @@
-# angularjs Directive中的scope设置
+---
+title: angularjs Directive中的scope设置
+date: '2022-05-26'
+---
+
+<!-- # angularjs Directive中的scope设置 -->
 
 | 值	| 继承/隔离 |	理解  | 解释   |
 |:---:|:--------:|:-----:|:-----:|

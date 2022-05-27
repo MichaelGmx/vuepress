@@ -1,4 +1,9 @@
-# Android编译问题汇总
+---
+title: Android编译问题汇总
+date: '2022-05-26'
+---
+
+<!-- # Android编译问题汇总 -->
 
 ## 一、Android问题：
 ### 1. ANDROID SDK未安装支持的版本
